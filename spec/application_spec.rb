@@ -63,7 +63,7 @@ RSpec.describe 'Vending Machine Interface' do
   describe 'Exit' do
     it 'exits the loop and says goodbye to the user' do
       output = run_application_with_input('D')
-      expect(output).to include('Thanks for shopping! Goodbye 👋')
+      expect(output).to include('Thanks for shopping! Goodbye!')
     end
   end
 
