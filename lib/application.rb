@@ -87,7 +87,7 @@ class Application
       @checkout.scan(@products[code]) if @products[code]
     end
     puts "| Total price: #{format('%.2f€', @checkout.total)} |"
-    @cart.clear  # Clear cart after checkout
+    @cart.clear 
   end
 end
 
