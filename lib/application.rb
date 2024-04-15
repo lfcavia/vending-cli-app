@@ -75,19 +75,19 @@ class Application
   end
 
   def checkout
-    puts "\n| Checkout Summary#{''.ljust(4)}|"
-    puts "|#{'-' * 21}|"
+    puts "\n| Checkout Summary#{''.ljust(5)}|"
+    puts "|#{'-' * 22}|"
     count = Hash.new(0)
     @cart.each { |code| count[code] += 1 }
     count.each do |code, qty|
-      puts "| #{qty} x #{code.ljust(16)}|"
+      puts "| #{qty} x #{code.ljust(17)}|"
     end
-    puts "|#{'-' * 21}|"
+    puts "|#{'-' * 22}|"
     @cart.each do |code|
       @checkout.scan(@products[code]) if @products[code]
     end
-    puts "| Total price: #{format('%.2f€', @checkout.total)} |"
-    @cart.clear 
+    puts "| Total price: #{format('%.2f€', @checkout.total).ljust(7)} |"
+    @cart.clear
   end
 end
 
