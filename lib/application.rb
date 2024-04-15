@@ -62,7 +62,7 @@ class Application
     if @products.key?(code_input)
       puts "\n How many?"
       n = gets.chomp.strip.to_i
-      if n.integer? && n != 0
+      if n > 0
         input = [code_input] * n
         puts "\n Added #{n} x #{code_input}."
         @cart.concat(input)
