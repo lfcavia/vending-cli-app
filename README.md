@@ -4,7 +4,7 @@ This Ruby-based application simulates a vending machine interface where users ca
 
 * Developed in Ruby version 3.1.2p20
 * TDD with Rspec and Open3 Ruby gems
-* Designed to be run in command line
+* Designed to be run in command line 
 
 ## Motivation
 
@@ -23,7 +23,7 @@ Let's relief their pain managing room service or controlling the mini-bar. Save 
 
 ## Project Structure
 
-In order to keep it as simple as possible, while achieving a decently scalable MVP, the application consists of the following files:
+In order to keep it as simple as possible, while achieving a scalable Model-View-Controller structure, the application consists of the following files:
 
 - **application.rb**: The main entry point for the application. It handles user interactions and manages the flow of the application.
 - **product.rb**: Defines the `Product` class. Each product has a code, name, and price.
@@ -62,11 +62,13 @@ Note the application_spec.rb file mocks user interaction with the Open3 gem, rep
 
 ## Potential scalability
 
-Create a Ruby on Rails framework application and use PostgreSQL to persist data and control sotck.
+This simple application could be further developed creating a Ruby on Rails application following a similar Model-View-Controller stucture, using PostgreSQL to persist data and control sotck and developing the frontend.
 
-- **Add more products**
-- **Add products to discounts**
-- **Add new discounts**: new types of discounts could be easily
+For this, the current `Product`, `Rule` and `Checkout` classes could be developed with a Model-Controller, and the user interface from the `Application` class would be transformed into the View.
+
+- **Add more products**: in the correspondent data file.
+- **Add new discounts**: new types of discounts could be easily as new methods in the Rule Model.
+- **Add or change products to a discount rule**: by changing the product code in the discount rule.
 - **Add new features**: to be discussed how UX could be improven with more complex functionalities such as editing the basket, or showing the subtotal price for each add-to-cart action.
 
 ## Installation
