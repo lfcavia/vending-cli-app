@@ -10,9 +10,9 @@ This Ruby-based application simulates a vending machine interface where users ca
 
 MVP for teams to brainstorm around Amenitiz's new product: "24h Snacks".
 
-The goal is to offer our hoteliers a 24h digital vending machine service, they can controll from our all-in-one platform, and offer to their guests through the hotel app.
+The future goal is to provide hoteliers with a 24-hour digital vending machine service, integrated in the all-in-one Amenitiz platform.
 
-Let's relief their pain managing room service or controlling the mini-bar. Save them time, money and headackes!
+Let's alleviate their pain of managing room service or controlling the mini-bar, saving them time, money, and headaches!
 
 ## Features
 
