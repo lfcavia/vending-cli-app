@@ -3,7 +3,7 @@
 This Ruby-based application simulates a vending machine interface where users can view a menu of products, add them to their cart, and see the total price with applied discounts at checkout.
 
 * Developed in Ruby version 3.1.2p20
-* TDD with Rspec and Open3 Ruby gems
+* TDD with Rspec Ruby gem
 * Designed to be run in command line 
 
 ## Motivation
@@ -58,7 +58,7 @@ This application supports the following products and discount rules:
 
 A Rspec test has been developed to test each file well-functioning independently.
 
-Note the application_spec.rb file mocks user interaction with the Open3 gem, replicating input and output with its module Popen2.
+Note the application_spec.rb file mocks user interaction with the Open3 Ruby gem, replicating input and output with its class method Popen2.
 
 ## Potential scalability
 
